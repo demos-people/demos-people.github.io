@@ -3,6 +3,11 @@ layout: vote
 title: Vote Our Rights
 permalink: /vote/
 ---
+<script>
+function vote() {
+    document.getElementById("demo").style.color = "red";
+}
+</script>
 <div style="height:30%">
 </div>
 <section id="contact-form">
@@ -13,14 +18,14 @@ permalink: /vote/
           <h1>디모스 소셜 투자 투표</h1>
           <p>당신의 욕망을 투표하세요!</p>
           <form>
-            <div class="form-group">
+            <div class="form-group" id="demo">
               <input type="text" class="form-control" placeholder="닉네임">
             </div>
             <div class="form-group">
               <input type="text" class="form-control" placeholder="이메일 주소">
             </div>
             <div class="form-group">
-              <button class="btn btn-default" type="submit">투표하러 가기</button>
+              <button class="btn btn-default" type="submit" onclick="vote()">투표하러 가기</button>
             </div>
           </form>
         </div>
