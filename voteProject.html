@@ -1,0 +1,46 @@
+---
+layout: vote
+title: Vote Our Rights
+permalink: /vote/
+---
+<script>
+function vote() {
+    document.getElementById("demo").style.color = "red";
+}
+</script>
+<div style="height:30%">
+</div>
+<section id="contact-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        당신에게는 총 6개의 코인이 있습니다. 6개 중 당신이 투자하고 싶은 프로젝트에 코인을 투표해주세요!
+      </div>
+      <div class="col-sm-4 col-sm-offset-2">
+        <div class="block">
+          <h1>펭귄 프로젝트</h1>
+          <form>
+            <div class="form-group" id="demo">
+              <input type="text" class="form-control" placeholder="넣을 코인">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-4 col-sm-offset-2">
+        <div class="block">
+          <h1>moiim 프로젝트</h1>
+          <form>
+            <div class="form-group" id="demo">
+              <input type="text" class="form-control" placeholder="닉네임">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="form-group">
+          <button class="btn btn-default" type="submit" onclick="vote()">최종 결정하기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
